@@ -4,7 +4,79 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="" />
+    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="新增common模块-20241130">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/advice/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/chat/Chat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/chat/ChatSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/CommentNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/Dynamic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/DynamicToUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/notice/LikeNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/Follow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/IdCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/Privilege.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/user/VideoEnsemble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/AddToEnsemble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Collect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/CollectGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Danmaku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Like.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/audience_reactions/Play.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/video_production/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/entity/video/video_production/VideoData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/file/CustomMultipartFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/LikeNoticeAddOrDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/RecommendVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/domain/pojo/UploadVideo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/BizIllegalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/DbException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/ForbiddenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/exception/UnauthorizedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/filter/TimeBasedFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/handle/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/handle/MyMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/chat/ChatMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/chat/ChatSessionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/CommentNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/DynamicMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/DynamicToUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/notice/LikeNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/FollowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/PrivilegeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/user/VideoEnsembleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/AddToEnsembleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CollectGroupMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CollectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/DanmakuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/LikeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/audience_reactions/PlayMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/video_production/VideoDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/mapper/video/video_production/VideoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/serializer/RelativeTimeSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/serializer/RemoveTSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/CollUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/bilibili/util/WebUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/06d10486-1436-49c2-9b1a-51f399b506ad.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/06d10486-1436-49c2-9b1a-51f399b506ad.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a58d17a-60da-428f-b700-fd5f8510c18c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a58d17a-60da-428f-b700-fd5f8510c18c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2b82412-914f-4b45-a5eb-0e6a7b06ce7e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2b82412-914f-4b45-a5eb-0e6a7b06ce7e/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,16 +89,21 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="customMavenHome" value="D:\env\maven\apache-maven-3.6.3" />
-        <option name="localRepository" value="D:\env\maven\apache-maven-3.6.3\repo" />
-        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
-        <option name="userSettingsFile" value="D:\env\maven\apache-maven-3.6.3\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Vizzinii"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vizzinii/fake-bilibili-backend.git",
+    "accountId": "d815f24d-e199-4ba9-bd35-8f340b01dbcc"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -38,8 +115,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/project/idea/bilibili-backend-reconstruction/eureka-server/src/main/resources",
+    "last_opened_file_path": "F:/Project07/fork/fake-bilibili-backend/common/src/main/java/com",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,11 +139,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Project07\fork\fake-bilibili-backend\common\src\main\java\com" />
+      <recent name="F:\Project07\fork\fake-bilibili-backend\common\src\main\java" />
       <recent name="D:\project\idea\bilibili-backend-reconstruction\eureka-server\src\main\resources" />
       <recent name="D:\project\idea\bilibili-backend-reconstruction\minio-service\src\main\resources" />
       <recent name="D:\project\idea\bilibili-backend-reconstruction\user-service\src\main\java\com\bilibili" />
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\user-service\src\main\java\com\caigui\bilibili" />
-      <recent name="D:\project\idea\bilibili-backend-reconstruction\user-service\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.bilibili" />
@@ -73,11 +152,20 @@
       <recent name="com.caigui.bilibili.constant" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="fake-bilibili-backend" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -100,10 +188,15 @@
       <workItem from="1732800075094" duration="184000" />
       <workItem from="1732800315068" duration="710000" />
       <workItem from="1732802249755" duration="5274000" />
+      <workItem from="1732895177543" duration="1161000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增common模块-20241130" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增common模块-20241130" />
   </component>
 </project>

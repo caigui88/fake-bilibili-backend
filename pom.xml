@@ -15,6 +15,7 @@
         <module>minio-server</module>
         <module>api-server</module>
         <module>eureka-server</module>
+        <module>common</module>
     </modules>
 
     <parent>

@@ -19,6 +19,14 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.bilibili</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- openfeign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

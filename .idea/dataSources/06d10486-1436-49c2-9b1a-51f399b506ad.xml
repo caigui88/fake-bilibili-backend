@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="bilibili@192.168.219.129">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.52">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.53">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1193,21 +1193,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </table>
     <column id="321" parent="299" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="322" parent="299" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="323" parent="299" name="ensemble_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="324" parent="299" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="325" parent="299" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1221,29 +1221,29 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="327" parent="300" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="328" parent="300" name="sender_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="329" parent="300" name="content">
-      <DasType>varchar(500)|0s</DasType>
       <Position>3</Position>
+      <StoredType>varchar(500)|0s</StoredType>
     </column>
     <column id="330" parent="300" name="receiver_id">
-      <DasType>int|0s</DasType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="331" parent="300" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="332" parent="300" name="status">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="333" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1257,29 +1257,29 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="335" parent="301" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="336" parent="301" name="sender_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="337" parent="301" name="receiver_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="338" parent="301" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="339" parent="301" name="update_time">
-      <DasType>datetime|0s</DasType>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="340" parent="301" name="update_content">
-      <DasType>varchar(500)|0s</DasType>
       <Position>6</Position>
+      <StoredType>varchar(500)|0s</StoredType>
     </column>
     <index id="341" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1293,21 +1293,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="343" parent="302" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="344" parent="302" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="345" parent="302" name="collect_group_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="346" parent="302" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="347" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1331,21 +1331,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </trigger>
     <column id="351" parent="303" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="352" parent="303" name="name">
-      <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="353" parent="303" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="354" parent="303" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="355" parent="303" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1359,33 +1359,33 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="357" parent="304" name="id">
       <AutoIncrement>2</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="358" parent="304" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="359" parent="304" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="360" parent="304" name="parent_id">
-      <DasType>int|0s</DasType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="361" parent="304" name="top_id">
-      <DasType>int|0s</DasType>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="362" parent="304" name="content">
-      <DasType>varchar(1000)|0s</DasType>
       <Position>6</Position>
+      <StoredType>varchar(1000)|0s</StoredType>
     </column>
     <column id="363" parent="304" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>7</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="364" parent="304" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1404,29 +1404,29 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </trigger>
     <column id="367" parent="305" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="368" parent="305" name="sender_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="369" parent="305" name="receiver_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="370" parent="305" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="371" parent="305" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="372" parent="305" name="status">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="373" parent="305" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1440,37 +1440,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="375" parent="306" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="376" parent="306" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="377" parent="306" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="378" parent="306" name="content">
-      <DasType>varchar(1000)|0s</DasType>
       <Position>4</Position>
+      <StoredType>varchar(1000)|0s</StoredType>
     </column>
     <column id="379" parent="306" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="380" parent="306" name="place">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="381" parent="306" name="type">
-      <DasType>int|0s</DasType>
       <Position>7</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="382" parent="306" name="color">
-      <DasType>int|0s</DasType>
       <Position>8</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="383" parent="306" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1489,29 +1489,29 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </trigger>
     <column id="386" parent="307" name="id">
       <AutoIncrement>138</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="387" parent="307" name="video_cover">
-      <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="388" parent="307" name="video_name">
-      <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="389" parent="307" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="390" parent="307" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="391" parent="307" name="author_id">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="392" parent="307" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1525,21 +1525,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="394" parent="308" name="id">
       <AutoIncrement>126</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="395" parent="308" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="396" parent="308" name="dynamic_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="397" parent="308" name="status">
-      <DasType>int|0s</DasType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="398" parent="308" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1553,21 +1553,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="400" parent="309" name="id">
       <AutoIncrement>3</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="401" parent="309" name="fans_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="402" parent="309" name="idol_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="403" parent="309" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="404" parent="309" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1581,29 +1581,29 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="406" parent="310" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="407" parent="310" name="sender_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="408" parent="310" name="comment_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="409" parent="310" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="410" parent="310" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="411" parent="310" name="status">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="412" parent="310" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1617,25 +1617,25 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="414" parent="311" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="415" parent="311" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="416" parent="311" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="417" parent="311" name="comment_id">
-      <DasType>int|0s</DasType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="418" parent="311" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="419" parent="311" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1659,21 +1659,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </trigger>
     <column id="423" parent="312" name="id">
       <AutoIncrement>59</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="424" parent="312" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="425" parent="312" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="426" parent="312" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="427" parent="312" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1692,29 +1692,29 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </trigger>
     <column id="430" parent="313" name="id">
       <AutoIncrement>6</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="431" parent="313" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="432" parent="313" name="collect_group">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="433" parent="313" name="recently_like">
-      <DasType>int|0s</DasType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="434" parent="313" name="fans_list">
-      <DasType>int|0s</DasType>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="435" parent="313" name="idol_list">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="436" parent="313" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1728,37 +1728,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="438" parent="314" name="id">
       <AutoIncrement>20</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="439" parent="314" name="username">
-      <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="440" parent="314" name="password">
-      <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="441" parent="314" name="cover">
-      <DasType>varchar(100)|0s</DasType>
       <Position>4</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="442" parent="314" name="nickname">
-      <DasType>varchar(100)|0s</DasType>
       <Position>5</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="443" parent="314" name="intro">
-      <DasType>varchar(200)|0s</DasType>
       <Position>6</Position>
+      <StoredType>varchar(200)|0s</StoredType>
     </column>
     <column id="444" parent="314" name="phone_number">
-      <DasType>varchar(50)|0s</DasType>
       <Position>7</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="445" parent="314" name="mail_number">
-      <DasType>varchar(50)|0s</DasType>
       <Position>8</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <index id="446" parent="314" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1772,37 +1772,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="448" parent="315" name="id">
       <AutoIncrement>146</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="449" parent="315" name="length">
-      <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
+      <StoredType>varchar(50)|0s</StoredType>
     </column>
     <column id="450" parent="315" name="url">
-      <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="451" parent="315" name="cover">
-      <DasType>varchar(100)|0s</DasType>
       <Position>4</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="452" parent="315" name="name">
-      <DasType>varchar(200)|0s</DasType>
       <Position>5</Position>
+      <StoredType>varchar(200)|0s</StoredType>
     </column>
     <column id="453" parent="315" name="intro">
-      <DasType>varchar(200)|0s</DasType>
       <Position>6</Position>
+      <StoredType>varchar(200)|0s</StoredType>
     </column>
     <column id="454" parent="315" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>7</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="455" parent="315" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>8</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="456" parent="315" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1816,33 +1816,33 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="458" parent="316" name="id">
       <AutoIncrement>146</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="459" parent="316" name="video_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="460" parent="316" name="comment_count">
-      <DasType>int|0s</DasType>
       <Position>3</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="461" parent="316" name="play_count">
-      <DasType>int|0s</DasType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="462" parent="316" name="like_count">
-      <DasType>int|0s</DasType>
       <Position>5</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="463" parent="316" name="danmaku_count">
-      <DasType>int|0s</DasType>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="464" parent="316" name="collect_count">
-      <DasType>int|0s</DasType>
       <Position>7</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <index id="465" parent="316" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1856,25 +1856,25 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="467" parent="317" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="468" parent="317" name="user_id">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="469" parent="317" name="name">
-      <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
+      <StoredType>varchar(100)|0s</StoredType>
     </column>
     <column id="470" parent="317" name="intro">
-      <DasType>varchar(150)|0s</DasType>
       <Position>4</Position>
+      <StoredType>varchar(150)|0s</StoredType>
     </column>
     <column id="471" parent="317" name="create_time">
-      <DasType>datetime|0s</DasType>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <index id="472" parent="317" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1888,64 +1888,64 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="474" parent="318" name="trace_id_high">
       <Comment>If non zero, this means the trace uses 128 bit traceIds instead of 64 bit</Comment>
-      <DasType>bigint|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="475" parent="318" name="trace_id">
       <Comment>coincides with zipkin_spans.trace_id</Comment>
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="476" parent="318" name="span_id">
       <Comment>coincides with zipkin_spans.id</Comment>
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="477" parent="318" name="a_key">
       <Comment>BinaryAnnotation.key or Annotation.value if type == -1</Comment>
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <column id="478" parent="318" name="a_value">
       <Comment>BinaryAnnotation.value(), which must be smaller than 64KB</Comment>
-      <DasType>blob|0s</DasType>
       <Position>5</Position>
+      <StoredType>blob|0s</StoredType>
     </column>
     <column id="479" parent="318" name="a_type">
       <Comment>BinaryAnnotation.type() or -1 if Annotation</Comment>
-      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="480" parent="318" name="a_timestamp">
       <Comment>Used to implement TTL; Annotation.timestamp or zipkin_spans.timestamp</Comment>
-      <DasType>bigint|0s</DasType>
       <Position>7</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="481" parent="318" name="endpoint_ipv4">
       <Comment>Null when Binary/Annotation.endpoint is null</Comment>
-      <DasType>int|0s</DasType>
       <Position>8</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="482" parent="318" name="endpoint_ipv6">
       <Comment>Null when Binary/Annotation.endpoint is null, or no IPv6 address</Comment>
-      <DasType>binary(16)|0s</DasType>
       <Position>9</Position>
+      <StoredType>binary(16)|0s</StoredType>
     </column>
     <column id="483" parent="318" name="endpoint_port">
       <Comment>Null when Binary/Annotation.endpoint is null</Comment>
-      <DasType>smallint|0s</DasType>
       <Position>10</Position>
+      <StoredType>smallint|0s</StoredType>
     </column>
     <column id="484" parent="318" name="endpoint_service_name">
       <Comment>Null when Binary/Annotation.endpoint is null</Comment>
-      <DasType>varchar(255)|0s</DasType>
       <Position>11</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <index id="485" parent="318" name="trace_id_high">
       <ColNames>trace_id_high
@@ -1996,27 +1996,27 @@ a_key</ColNames>
       <UnderlyingIndexName>trace_id_high</UnderlyingIndexName>
     </key>
     <column id="493" parent="319" name="day">
-      <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>date|0s</StoredType>
     </column>
     <column id="494" parent="319" name="parent">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <column id="495" parent="319" name="child">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <column id="496" parent="319" name="call_count">
-      <DasType>bigint|0s</DasType>
       <Position>4</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="497" parent="319" name="error_count">
-      <DasType>bigint|0s</DasType>
       <Position>5</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <index id="498" parent="319" name="PRIMARY">
       <ColNames>day
@@ -2032,47 +2032,47 @@ child</ColNames>
     </key>
     <column id="500" parent="320" name="trace_id_high">
       <Comment>If non zero, this means the trace uses 128 bit traceIds instead of 64 bit</Comment>
-      <DasType>bigint|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="501" parent="320" name="trace_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="502" parent="320" name="id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="503" parent="320" name="name">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <column id="504" parent="320" name="remote_service_name">
-      <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
+      <StoredType>varchar(255)|0s</StoredType>
     </column>
     <column id="505" parent="320" name="parent_id">
-      <DasType>bigint|0s</DasType>
       <Position>6</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="506" parent="320" name="debug">
-      <DasType>bit(1)|0s</DasType>
       <Position>7</Position>
+      <StoredType>bit(1)|0s</StoredType>
     </column>
     <column id="507" parent="320" name="start_ts">
       <Comment>Span.timestamp(): epoch micros used for endTs query and to implement TTL</Comment>
-      <DasType>bigint|0s</DasType>
       <Position>8</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <column id="508" parent="320" name="duration">
       <Comment>Span.duration(): micros used for minDuration and maxDuration query</Comment>
-      <DasType>bigint|0s</DasType>
       <Position>9</Position>
+      <StoredType>bigint|0s</StoredType>
     </column>
     <index id="509" parent="320" name="PRIMARY">
       <ColNames>trace_id_high
