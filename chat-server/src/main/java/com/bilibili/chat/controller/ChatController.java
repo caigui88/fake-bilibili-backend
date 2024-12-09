@@ -26,25 +26,25 @@ public class ChatController {
     @Resource
     ChatService chatService;
 
-    @GetMapping("/getPPT/{describe}")
-    @ApiOperation("获取PPT")
-    public PPTVO getPPT(@PathVariable String describe) throws IOException, InterruptedException {
-        log.info("正在获取PPT");
-        log.info("\n");
-        log.info("\n");
-        log.info("\n");
-        return chatService.getPPT(describe);
-    }
+//    @GetMapping("/getPPT/{describe}")
+//    @ApiOperation("获取PPT")
+//    public PPTVO getPPT(@PathVariable String describe) throws IOException, InterruptedException {
+//        log.info("正在获取PPT");
+//        log.info("\n");
+//        log.info("\n");
+//        log.info("\n");
+//        return chatService.getPPT(describe);
+//    }
 
-    @GetMapping("/getImage/{text}")
-    @ApiOperation("获取图片")
-    public String getImage(@PathVariable String text) throws Exception {
-        log.info("正在获取图片");
-        log.info("\n");
-        log.info("\n");
-        log.info("\n");
-        return chatService.getImage(text);
-    }
+//    @GetMapping("/getImage/{text}")
+//    @ApiOperation("获取图片")
+//    public String getImage(@PathVariable String text) throws Exception {
+//        log.info("正在获取图片");
+//        log.info("\n");
+//        log.info("\n");
+//        log.info("\n");
+//        return chatService.getImage(text);
+//    }
 
     @GetMapping("/createTempSession/{receiverId}")
     @ApiOperation("创建临时会话")

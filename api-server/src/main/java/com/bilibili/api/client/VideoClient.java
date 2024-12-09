@@ -1,8 +1,10 @@
 package com.bilibili.api.client;
 
 import com.bilibili.common.domain.api.pojo.UploadVideo;
+import com.bilibili.common.domain.search.vo.VideoKeywordSearchVO;
 import com.bilibili.common.domain.video.entity.audience_reactions.Comment;
 import com.bilibili.common.domain.video.entity.video_production.Video;
+import com.bilibili.common.domain.video.entity.video_production.VideoData;
 import com.github.yulichang.wrapper.MPJLambdaWrapper;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.core.io.Resource;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
 
 @Component
 @FeignClient(name = "video-service",url = "http://localhost:8223")
@@ -37,4 +41,9 @@ public interface VideoClient {
     @PostMapping("/video/getTableData/updateById")
     void updateById(Video video);
 
+    @GetMapping("/video/getTableData/selectVideoJoinList")
+    List<VideoKeywordSearchVO> selectVideoJoinList (Class<VideoKeywordSearchVO> var1, MPJLambdaWrapper<Video> wrapper);
+
+    @GetMapping("/video/getTableData/selectVideoList")
+    List<VideoData> selectList(MPJLambdaWrapper<VideoData> wrapper);
 }

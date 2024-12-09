@@ -5,9 +5,9 @@ import lombok.experimental.Accessors;
 
 import java.util.List;
 
-@Data
-@Accessors(chain = true)
-public class PPTVO {
-    private String coverImgSrc;
-    private List<PPTWord> pptWordList;
-}
+//@Data
+//@Accessors(chain = true)
+//public class PPTVO {
+//    private String coverImgSrc;
+//    private List<PPTWord> pptWordList;
+//}

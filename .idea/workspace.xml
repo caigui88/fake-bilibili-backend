@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="编写了上传到minio和从minio获取视频与图片的接口；实现管理员查看所有表数据的功能-20241208">
-      <change afterPath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/api/client/NoticeClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/api/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notice-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/NoticeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/controller/GetTableDataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/service/GetTableDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/service/impl/GetTableDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/controller/GetTableDataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/GetTableDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/impl/GetTableDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/config/Knife4jConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/config/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/api/client/VideoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/src/main/java/com/bilibili/api/client/VideoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/CommentNoticeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/mapper/CommentNoticeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/DynamicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/mapper/DynamicMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/DynamicToUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/mapper/DynamicToUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/notice/LikeNoticeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/notice-server/src/main/java/com/bilibili/notice/mapper/LikeNoticeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/FollowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/mapper/FollowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/PrivilegeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/mapper/PrivilegeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/user/VideoEnsembleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/mapper/VideoEnsembleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/AddToEnsembleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/AddToEnsembleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/CollectGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/CollectGroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/CollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/CollectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/DanmakuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/DanmakuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/LikeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/LikeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/audience_reactions/PlayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/visitor/PlayMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/video_production/VideoDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/blogger/VideoDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/bilibili/common/mapper/video/video_production/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/mapper/blogger/VideoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/UserInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/bilibili/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/VideoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/VideoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/controller/GetAllTableDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/controller/GetAllTableDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/GetAllTableDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/GetAllTableDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/CollectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/CollectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/DanmakuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/DanmakuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/LikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/LikeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/PlayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/PlayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/UploadAndEditServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/video-server/src/main/java/com/bilibili/video/service/impl/UploadAndEditServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="c0954eee-6879-482c-a5a5-f0ec037fd15e" name="更改" comment="编写了notice-server模块内消息队列consumer的实现类；完善了UserClient和VideoClient的调用方法-20241209" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +45,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.notice-server [clean].executor": "Run",
+    "Maven.notice-server [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -212,7 +164,47 @@
       <option name="project" value="LOCAL" />
       <updated>1733625433603</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="将所有mapper重构至对应的微服务模块下；实现“查询所有表信息”对notice-server和user-server中方法的远程调用；新增了notice-server和chat-server模块；添加但未完全实现user-server里修改个人信息的功能-20241208">
+      <option name="closed" value="true" />
+      <created>1733643586761</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733643586761</updated>
+    </task>
+    <task id="LOCAL-00008" summary="实现了chat-server模块功能；实现对user-server模块内方法的远程调用；编写了notice-server模块的接口但未实现其功能逻辑-20241208">
+      <option name="closed" value="true" />
+      <created>1733667185539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733667185539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="新增了对video-server模块方法的远程调用；优化了各模块“获取数据库表格数据”相关接口的url地址；实现了“获取动态消息相关接口”-20241208">
+      <option name="closed" value="true" />
+      <created>1733672663211</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733672663211</updated>
+    </task>
+    <task id="LOCAL-00010" summary="实现了notice-server模块内（生产者）向用户异步发送消息的功能；TODO:尚未实现消费者相关功能，尚未为每个微服务加入application.yml配置文件-20241209">
+      <option name="closed" value="true" />
+      <created>1733677359292</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733677359292</updated>
+    </task>
+    <task id="LOCAL-00011" summary="编写了notice-server模块内消息队列consumer的实现类；完善了UserClient和VideoClient的调用方法-20241209">
+      <option name="closed" value="true" />
+      <created>1733725687727</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733725687727</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +255,12 @@
     <MESSAGE value="实现收藏夹模块和收藏视频的功能-20241207" />
     <MESSAGE value="实现上传视频相关功能；新增了api中的MinioClient接口-20241208" />
     <MESSAGE value="编写了上传到minio和从minio获取视频与图片的接口；实现管理员查看所有表数据的功能-20241208" />
-    <option name="LAST_COMMIT_MESSAGE" value="编写了上传到minio和从minio获取视频与图片的接口；实现管理员查看所有表数据的功能-20241208" />
+    <MESSAGE value="将所有mapper重构至对应的微服务模块下；实现“查询所有表信息”对notice-server和user-server中方法的远程调用；新增了notice-server和chat-server模块；添加但未完全实现user-server里修改个人信息的功能-20241208" />
+    <MESSAGE value="实现了chat-server模块功能；实现对user-server模块内方法的远程调用；编写了notice-server模块的接口但未实现其功能逻辑-20241208" />
+    <MESSAGE value="新增了对video-server模块方法的远程调用；优化了各模块“获取数据库表格数据”相关接口的url地址；实现了“获取动态消息相关接口”-20241208" />
+    <MESSAGE value="实现了notice-server模块内（生产者）向用户异步发送消息的功能；TODO:尚未实现消费者相关功能，尚未为每个微服务加入application.yml配置文件-20241209" />
+    <MESSAGE value="编写了notice-server模块内消息队列consumer的实现类；完善了UserClient和VideoClient的调用方法-20241209" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写了notice-server模块内消息队列consumer的实现类；完善了UserClient和VideoClient的调用方法-20241209" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

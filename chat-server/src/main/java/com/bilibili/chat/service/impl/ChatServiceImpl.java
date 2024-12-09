@@ -41,15 +41,15 @@ public class ChatServiceImpl implements ChatService {
     UserClient userClient;
 
 
-    @Override
-    public PPTVO getPPT(String describe) {
-        return null;
-    }
+//    @Override
+//    public PPTVO getPPT(String describe) {
+//        return null;
+//    }
 
-    @Override
-    public String getImage(String text) {
-        return "";
-    }
+//    @Override
+//    public String getImage(String text) {
+//        return "";
+//    }
 
     /**
      * 创建临时会话

@@ -1,11 +1,11 @@
 package com.bilibili.user.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.bilibili.common.domain.user.entity.Follow;
-import com.bilibili.common.domain.user.entity.Privilege;
-import com.bilibili.common.domain.user.entity.User;
-import com.bilibili.common.domain.user.entity.VideoEnsemble;
+import com.bilibili.common.domain.search.entity.UserEntity;
+import com.bilibili.common.domain.user.entity.*;
+import com.bilibili.common.domain.video.entity.video_production.VideoData;
 import com.bilibili.user.service.GetTableDataService;
+import com.github.yulichang.wrapper.MPJLambdaWrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -82,4 +82,33 @@ public class GetTableDataController {
         log.info("\n");
         return getTableDataService.selectFollowList(wrapper);
     }
+
+    @GetMapping("/selectUserJoinList")
+    @ApiOperation("远程调用user-server根据条件查询用户表")
+    public List<UserEntity> selectUserJoinList(Class<UserEntity> var1, MPJLambdaWrapper<User> wrapper){
+        log.info("正在远程调用user-server根据条件查询用户表");
+        log.info("\n");
+        return getTableDataService.selectUserJoinList(var1,wrapper);
+    }
+
+    @GetMapping("/selectUserList")
+    public List<User> selectList(MPJLambdaWrapper<User> wrapper){
+        log.info("正在远程调用user-server根据条件查询用户表");
+        log.info("\n");
+        return getTableDataService.selectList(wrapper);
+    }
+
+    @GetMapping("/getIdolCount")
+    public List<IdCount> getIdolCount(List<Integer> ids){
+        log.info("正在远程调用user-server的 getIdolCount 方法");
+        return getTableDataService.getIdolCount(ids);
+    }
+
+    @GetMapping("/getVideoCount")
+    public List<IdCount> getVideoCount(List<Integer> ids){
+        log.info("正在远程调用user-server的 getVideoCount 方法");
+        return getTableDataService.getVideoCount(ids);
+    }
+
+
 }

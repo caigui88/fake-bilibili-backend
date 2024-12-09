@@ -11,9 +11,9 @@ import com.bilibili.common.util.Result;
 import java.util.List;
 
 public interface ChatService {
-    PPTVO getPPT(String describe);
+//    PPTVO getPPT(String describe);
 
-    String getImage(String text);
+//    String getImage(String text);
 
     Result<TempSessionVO> createTempSession(Integer receiverId);
 
