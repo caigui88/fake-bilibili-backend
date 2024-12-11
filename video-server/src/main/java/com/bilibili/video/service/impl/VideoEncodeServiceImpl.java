@@ -1,7 +1,7 @@
 package com.bilibili.video.service.impl;
 
 import cn.hutool.core.io.resource.InputStreamResource;
-import com.bilibili.api.client.MinioClient;
+import com.bilibili.api.client.MinioApiClient;
 import com.bilibili.common.domain.api.pojo.UploadVideo;
 import com.bilibili.video.service.VideoEncodeService;
 import org.springframework.http.HttpHeaders;
@@ -19,7 +19,7 @@ import static com.bilibili.common.constant.VideoConstant.*;
 public class VideoEncodeServiceImpl implements VideoEncodeService {
 
     @Resource
-    MinioClient minioClient;
+    MinioApiClient minioApiClient;
 
     /**
      * 从MinIO对象存储服务中获取视频文件，并将其作为HTTP响应的一部分返回给客户端
@@ -29,8 +29,7 @@ public class VideoEncodeServiceImpl implements VideoEncodeService {
     @Override
     public ResponseEntity<Resource> getVideoInputStream(UploadVideo uploadVideo) {
         String url=uploadVideo.getUrl();
-         // TODO getObject方法
-        InputStream inputStream = minioClient.getObject(url.substring(url.lastIndexOf("/")+1));
+        InputStream inputStream = minioApiClient.getVideoFile(url.substring(url.lastIndexOf("/")+1));
         InputStreamResource resource = new InputStreamResource(inputStream);
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, HEADERS_VALUES)
@@ -44,8 +43,7 @@ public class VideoEncodeServiceImpl implements VideoEncodeService {
      */
     @Override
     public void uploadVideo(MultipartFile multipartFile) throws IOException {
-        // TODO uploadVideoFile方法
-        minioClient.uploadVideoFile(multipartFile.getOriginalFilename(),multipartFile.getInputStream(),VIDEO_TYPE);
+        minioApiClient.uploadVideoFile(multipartFile.getOriginalFilename(),multipartFile.getInputStream(),VIDEO_TYPE);
     }
 
     /**
@@ -55,7 +53,6 @@ public class VideoEncodeServiceImpl implements VideoEncodeService {
      */
     @Override
     public void uploadVideoCover(MultipartFile multipartFile) throws IOException {
-        // TODO uploadVideoCover方法
-        minioClient.uploadImgFile(multipartFile.getOriginalFilename(),multipartFile.getInputStream(),IMAGE_TYPE);
+        minioApiClient.uploadImgFile(multipartFile.getOriginalFilename(),multipartFile.getInputStream(),IMAGE_TYPE);
     }
 }

@@ -19,6 +19,7 @@
         <module>notice-server</module>
         <module>chat-server</module>
         <module>search-server</module>
+        <module>minio-server</module>
     </modules>
 
     <parent>

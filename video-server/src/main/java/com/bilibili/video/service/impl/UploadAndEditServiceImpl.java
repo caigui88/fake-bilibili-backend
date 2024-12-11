@@ -3,7 +3,7 @@ package com.bilibili.video.service.impl;
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.io.IoUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.bilibili.api.client.MinioClient;
+import com.bilibili.api.client.MinioApiClient;
 import com.bilibili.api.client.SendNoticeClient;
 import com.bilibili.api.client.UserClient;
 import com.bilibili.common.domain.api.file.CustomMultipartFile;
@@ -16,7 +16,6 @@ import com.bilibili.common.domain.video.dto.UploadVideoDTO;
 import com.bilibili.common.domain.video.entity.video_production.Video;
 import com.bilibili.common.domain.video.entity.video_production.VideoData;
 import com.bilibili.common.domain.video.pojo.UploadPart;
-import com.bilibili.common.mapper.user.UserMapper;
 import com.bilibili.video.mapper.blogger.VideoDataMapper;
 import com.bilibili.video.mapper.blogger.VideoMapper;
 import com.bilibili.common.util.Result;
@@ -68,7 +67,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
     VideoDataMapper videoDataMapper;
 
     @Resource
-    MinioClient minioClient;
+    MinioApiClient minioApiClient;
 
     @Resource
     SendNoticeClient client;
@@ -108,8 +107,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
                 CustomMultipartFile coverMultipartFile = new CustomMultipartFile(decodedBytes, coverFileName, imgContentType);
                 queryWrapper.eq(Video::getVideoCover, UUID.randomUUID().toString().substring(0, 8) + coverFileName);
 
-                //TODO:上传图片
-                //minioClient.uploadImgFile(coverFileName, coverMultipartFile.getInputStream(), imgContentType);
+                minioApiClient.uploadImgFile(coverFileName, coverMultipartFile.getInputStream(), imgContentType);
 
                 client.sendUploadNotice(new UploadVideo().setVideoId(video.getId()).setVideoName(video.getName()).setUrl(url).setHasCover(true));
                 User user = userClient.selectById(uploadVideoDTO.toEntity().getUserId());
@@ -214,8 +212,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
         // 生成新的文件名
         String name = resumableIdentifier + UUID.randomUUID().toString().substring(0, 10);
 
-        // TODO 上传分片
-        minioClient.uploadVideoFile(name, uploadPartDTO.getFile().getInputStream(), VIDEO_TYPE);
+        minioApiClient.uploadVideoFile(name, uploadPartDTO.getFile().getInputStream(),VIDEO_TYPE);
 
         // 更新上传分片信息
         log.info(uploadPartMap.toString());
@@ -232,8 +229,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
             videoName = resumableIdentifier + UUID.randomUUID().toString().substring(0, 10);
             videoCover = uploadPartMap.get(resumableIdentifier).getCover();
 
-            // TODO 合并视频
-            // minioClient.composePart(resumableIdentifier, videoName);
+             minioApiClient.composePart(resumableIdentifier, videoName);
         }
 
         // 返回视频文件名和封面信息
@@ -270,8 +266,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
                 map.put(VIDEO_URL, videoUrl);
                 CompletableFuture<Void> future = CompletableFuture.runAsync(() -> {
                     try {
-                        // TODO 上传视频文件
-                        minioClient.uploadVideoFile(videoUrl, videoFile.getInputStream(), videoFile.getContentType());
+                        minioApiClient.uploadVideoFile(videoUrl, videoFile.getInputStream(), videoFile.getContentType());
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
@@ -305,8 +300,7 @@ public class UploadAndEditServiceImpl implements UploadAndEditService {
                     String coverUrl = UUID.randomUUID().toString().substring(0, 10) + coverFile.getOriginalFilename();
                     map.put(VIDEO_COVER, coverUrl);
                     try {
-                        // TODO 上传封面文件
-                        minioClient.uploadImgFile(coverUrl, coverFile.getInputStream(), coverFile.getContentType());
+                        minioApiClient.uploadImgFile(coverUrl, coverFile.getInputStream(), coverFile.getContentType());
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }

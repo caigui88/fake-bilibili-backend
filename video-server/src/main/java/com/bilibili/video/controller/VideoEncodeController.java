@@ -1,13 +1,9 @@
 package com.bilibili.video.controller;
 
-import cn.hutool.core.io.resource.InputStreamResource;
-import com.bilibili.api.client.MinioClient;
 import com.bilibili.common.domain.api.pojo.UploadVideo;
 import com.bilibili.video.service.VideoEncodeService;
 import io.swagger.annotations.Api;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,9 +12,6 @@ import springfox.documentation.annotations.ApiIgnore;
 
 import javax.annotation.Resource;
 import java.io.IOException;
-import java.io.InputStream;
-
-import static com.bilibili.common.constant.VideoConstant.*;
 
 @RestController
 @RequestMapping("/videoEncode")
